@@ -1,0 +1,11 @@
+.styled-component{
+    width: 80%;
+    height: 50%;
+    background-color: beige;
+}
+
+.redDiv {
+    background-color: blue;
+    width : 155px;
+    height: 358px;
+}

@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import ContactServer from "./components/Contact server/ContactServer";
+import StyledComponent from "./components/StyledComponent";
+import ComponentA from "./components/css modules/Demo/ComponentA";
+import ComponentB from "./components/css modules/Demo/ComponentB";
 
 function App() {
+  // const [text, setText] = useState([]);
+
+  // useEffect(() => {
+  //   fetch(process.env.REACT_APP_URL + "api/authors")
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setText(data);
+  //     });
+  // }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* {text.map((item) => {
+        return <p>{item.fullName}</p>;
+      })} */}
+      <ContactServer />
+      <StyledComponent />
+      <ComponentA />
+      <ComponentB />
+      {/* <ContactServer /> */}
     </div>
   );
 }
